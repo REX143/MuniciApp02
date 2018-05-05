@@ -1,0 +1,33 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_fragment"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.horizontemovil.municiapp.activities.MainActivity" >
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                </com.google.android.gms.maps.MapView>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorIcons">
+
+                <include layout="@layout/fragment_nuevo_evento"></include>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+</fragment>
